@@ -36,7 +36,6 @@ export default defineComponent({
   name: 'AppHeader',
   methods: {
     changePage() {
-      this.isOpen = false
       window.scrollTo({top: 0, behavior: 'smooth'})
     }
   }
