@@ -1,27 +1,79 @@
-# Vue 3 + Typescript + Vite
+# Welcome to my portfolio 👋
+![Version](https://img.shields.io/badge/Version-1.6-blue.svg?cacheSeconds=2592000)
+[![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)](#)
+[![Open Source Love png1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-This template should help get you started developing with Vue 3 and Typescript in Vite.
+> This is my portfolio, here I will show to you my skills, projects, a piece of my history as web developer, among other things.
 
-## Recommended IDE Setup
+### 🏠 [Homepage](https://icarodev.ga)
 
-[VSCode](https://code.visualstudio.com/) + [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur). Make sure to enable `vetur.experimental.templateInterpolationService` in settings!
+## :bookmark_tabs: Content
 
-### If Using `<script setup>`
+- [:zap: Features](#features-zap)
+- [:hammer_and_pick: Usage](#usage-hammer_and_pick) <br>
+&nbsp;&nbsp; - [:gear: Firebase Configuration](#firebase-configuration-gear)<br>
+&nbsp;&nbsp; - [:gear: EmailJs Configuration](#emailjs-configuration-gear)<br>
+- [:sparkles: Observations](#observations-sparkles)
+- [:handshake: Show your support](#show-your-support-handshake)
+- [:technologist: Author](#author-technologist)
 
-[`<script setup>`](https://github.com/vuejs/rfcs/pull/227) is a feature that is currently in RFC stage. To get proper IDE support for the syntax, use [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) instead of Vetur (and disable Vetur).
+---
 
-## Type Support For `.vue` Imports in TS
+## Features :zap:
+[![Deployed in Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://icarodev.ga)
+[![Vuejs](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=Vue.js&logoColor=4FC08D)](https://vuejs.org/)
+[![Vitejs](https://img.shields.io/badge/Vite.js-646CFF?style=for-the-badge&logo=Vite&logoColor=white)](https://vitejs.dev/)
+[![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Firebase](https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=white)](https://firebase.google.com/)
+[![EmailJs](https://github.com/PatoGordo/PatoGordo/blob/main/Images/EmailJsBadge.svg)](https://www.emailjs.com/)
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can use the following:
+## Usage :hammer_and_pick:
 
-### If Using Volar
+### Firebase configuration :gear:
+- Open the 'Src/Services/firebase.ts' and put there your firebase app credentitals.
+```js
+  const firebaseApp = firebase.initializeApp({
+    apiKey: "<Your-Firebase-ApiKey>",
+    authDomain: "<Your-Firebase-AuthDomain>",
+    databaseURL: "<Your-Firebase-DatabaseURL>",
+    projectId: "<Your-Firebase-ProjectId>",
+    storageBucket: "<Your-Firebase-StorageBucket>",
+    messagingSenderId: "<Your-Firebase-MessagingSenderId>",
+    appId: "<Your-Firebase-AppId>"
+  })
+```
+- Change your firebase firestore rules
+```js
+  rules_version = '2';
+  service cloud.firestore {
+    match /databases/{database}/documents {
+      match /{document=**} {
+        allow create: if request.auth == null;
+        allow read, write: if request.auth.uid == '<Your-Admin-UID>';
+        allow read: if request.auth.uid == '<Your-Observer-UID>'; // Optional
+      }
+    }
+  }
+```
+***
 
-Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
+> ## Observations :sparkles:
+> ***Now the site uses Lessjs instead of CSS.*** <br>
+> If you would like to use the CSS version click on the link below. <br>
+>[This version is made using CSS](https://github.com/PatoGordo/PatoGordo/tree/main/Old%20Releases) (_**This version will not receive new updates!**_)
 
-### If Using Vetur
 
-1. Install and add `@vuedx/typescript-plugin-vue` to the [plugins section](https://www.typescriptlang.org/tsconfig#plugins) in `tsconfig.json`
-2. Delete `src/shims-vue.d.ts` as it is no longer needed to provide module info to Typescript
-3. Open `src/main.ts` in VSCode
-4. Open the VSCode command palette
-5. Search and run "Select TypeScript version" -> "Use workspace version"
+## Show your support :handshake:
+
+Give a ⭐️ if this project helped you!<br>
+Makes a [pull request](https://github.com/PatoGordo/icarodevts.ga/pulls) adding new features or solving bugs. <br>
+Create a [Issue](https://github.com/PatoGordo/icarodevts.ga/issues) if you don't want to implement the feature or fix the bug. <br>
+
+## Author :technologist:
+
+**PatoGordo**
+
+* Website: [https://patogordo.ga](https://icarodev.ga) <br>
+* Github: [@PatoGordo](https://github.com/PatoGordo) <br>
+
+***
