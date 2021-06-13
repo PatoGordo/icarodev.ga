@@ -349,11 +349,6 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-15.12.2.tgz#1f2b42c4be7156ff4a6f914b2fb03d05fa84e38d"
   integrity sha512-zjQ69G564OCIWIOHSXyQEEDpdpGl+G348RAKY0XXy9Z5kU9Vzv1GMNnkar/ZJ8dzXB3COzD9Mo9NtRZ4xfgUww==
 
-"@types/simple-icons@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@types/simple-icons/-/simple-icons-5.0.0.tgz#9316cd2fba6b2b49feae2740abf938ea6f95749b"
-  integrity sha512-IYUA5DPdIs+LoptVS1NNGXnBTtqctYR9t4MHQ9Xb38WCC4lJtsmYkFnOYSidKBrg+2C/Ll1NW1TmLX1sMPQuCA==
-
 "@vitejs/plugin-vue@^1.2.3":
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue/-/plugin-vue-1.2.3.tgz#2e8e008b1cc3a6ad1dfbec75743c7ffd9b4872a6"
@@ -1045,11 +1040,6 @@ setimmediate@~1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/setimmediate/-/setimmediate-1.0.5.tgz#290cbb232e306942d7d7ea9b83732ab7856f8285"
   integrity sha1-KQy7Iy4waULX1+qbg3Mqt4VvgoU=
-
-simple-icons@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/simple-icons/-/simple-icons-5.1.0.tgz#2bcf4e847fe95d61d5cffe456a2d9a66954220cf"
-  integrity sha512-eYaG95mbAtLCLdIhlXlTsFM+AwVJEwkCDHDGJIYxv8MMgdVcbKH0EligeqKcrbtGlDg06rGtJ5rL22mj0p3wtw==
 
 source-map-js@^0.6.2:
   version "0.6.2"
