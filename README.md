@@ -12,7 +12,6 @@
 - [:zap: Features](#features-zap)
 - [:hammer_and_pick: Usage](#usage-hammer_and_pick) <br>
 &nbsp;&nbsp; - [:gear: Firebase Configuration](#firebase-configuration-gear)<br>
-<!-- &nbsp;&nbsp; - [:gear: EmailJs Configuration](#emailjs-configuration-gear)<br> -->
 - [:sparkles: Observations](#observations-sparkles)
 - [:handshake: Show your support](#show-your-support-handshake)
 - [:technologist: Author](#author-technologist)
@@ -30,7 +29,7 @@
 ## Usage :hammer_and_pick:
 
 ### Firebase configuration :gear:
-- Open the 'Src/Services/firebase.ts' and put there your firebase app credentitals.
+- Open the 'src/firebase.ts' and put there your firebase app credentitals.
 ```js
   const firebaseApp = firebase.initializeApp({
     apiKey: "<Your-Firebase-ApiKey>",
@@ -56,12 +55,6 @@
   }
 ```
 ***
-
-> ## Observations :sparkles:
-> ***Now the site uses Lessjs instead of CSS.*** <br>
-> If you would like to use the CSS version click on the link below. <br>
->[This version is made using CSS](https://github.com/PatoGordo/PatoGordo/tree/main/Old%20Releases) (_**This version will not receive new updates!**_)
-
 
 ## Show your support :handshake:
 
