@@ -12,7 +12,7 @@
 - [:zap: Features](#features-zap)
 - [:hammer_and_pick: Usage](#usage-hammer_and_pick) <br>
 &nbsp;&nbsp; - [:gear: Firebase Configuration](#firebase-configuration-gear)<br>
-&nbsp;&nbsp; - [:gear: EmailJs Configuration](#emailjs-configuration-gear)<br>
+<!-- &nbsp;&nbsp; - [:gear: EmailJs Configuration](#emailjs-configuration-gear)<br> -->
 - [:sparkles: Observations](#observations-sparkles)
 - [:handshake: Show your support](#show-your-support-handshake)
 - [:technologist: Author](#author-technologist)
