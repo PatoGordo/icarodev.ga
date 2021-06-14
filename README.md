@@ -22,6 +22,7 @@
 [![Deployed in Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://icarodev.ga)
 [![Vuejs](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=Vue.js&logoColor=4FC08D)](https://vuejs.org/)
 [![Vitejs](https://img.shields.io/badge/Vite.js-646CFF?style=for-the-badge&logo=Vite&logoColor=white)](https://vitejs.dev/)
+[![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)](https://sass-lang.com/)
 [![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Firebase](https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=white)](https://firebase.google.com/)
 [![EmailJs](https://github.com/PatoGordo/PatoGordo/blob/main/Images/EmailJsBadge.svg)](https://www.emailjs.com/)
