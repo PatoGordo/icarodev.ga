@@ -6,15 +6,15 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: 'Page404'
-})
+  name: "Page404",
+});
 </script>
 
 <style lang="scss" scoped>
-  div {
-    text-align: center;
-  }
+div {
+  text-align: center;
+}
 </style>

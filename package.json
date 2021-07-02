@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
+    "axios": "^0.21.1",
     "emailjs-com": "^3.0.2",
     "firebase": "^8.6.7",
     "vue": "^3.0.5",
