@@ -123,7 +123,7 @@ export default defineComponent({
 
       axios
         .post(
-          "https://my-contact-api.herokuapp.com/set-contact",
+          "https://my-contact-api.herokuapp.com/contact/set",
           this.contact
         )
         .then((res) => {
