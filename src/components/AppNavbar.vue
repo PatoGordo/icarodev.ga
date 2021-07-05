@@ -3,12 +3,12 @@
     <h2 @click="changePage()"><router-link to="/">Icaro</router-link></h2>
 
     <ul :class="isOpen ? 'on' : 'off'">
-      <li @click="isOpen = false" v-scroll-to="{ el: '#skills', offset: -125 }">
+      <li @click="isOpen = false" v-scroll-to="{ el: '#skills', offset: -75 }">
         <a>Skills</a>
       </li>
       <li
         @click="isOpen = false"
-        v-scroll-to="{ el: '#projects', offset: -125 }"
+        v-scroll-to="{ el: '#projects', offset: -135 }"
       >
         <a>Projects</a>
       </li>

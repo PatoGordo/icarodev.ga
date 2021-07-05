@@ -25,7 +25,7 @@
         <br /><br />
         Today I'm looking for a job or internship in a company.
       </p>
-      <a v-scroll-to="{ el: '#skills', offset: -125 }" class="see-skills"
+      <a v-scroll-to="{ el: '#skills', offset: -75 }" class="see-skills"
         >See my skills <br /><ion-icon name="chevron-down-outline"></ion-icon
       ></a>
     </div>

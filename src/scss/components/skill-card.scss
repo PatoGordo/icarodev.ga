@@ -1,0 +1,41 @@
+.skill-card-dev {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: rgba(0, 0, 0, .3);
+  padding: 16px;
+  border-radius: 8px;
+  h2 {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    place-items: center;
+    gap: 16px;
+    li {
+      width: 100%;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      gap: 16px;
+      .svg-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f9f9f9;
+        border-radius: 50%;
+        object-fit: cover;
+        padding: 6px;
+      }
+      svg {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}

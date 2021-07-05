@@ -19,6 +19,7 @@
 
       <form @submit.prevent="addContact()" class="form">
         <h2>Contact me through this form</h2>
+        <p style="color: #FFB74D; opacity: 0.6">It may take a while to send the contact, I'm trying to fix this.</p>
         <div class="input-field">
           <label class="only-screen-reader" for="name">Your name</label>
           <input
@@ -127,6 +128,12 @@ export default defineComponent({
         )
         .then((res) => {
           alert(res.data.message);
+          this.contact = {
+            id: "",
+            name: "",
+            email: "",
+            message: "",
+          }
         })
         .catch((err) => {
           alert(err.message);
@@ -167,7 +174,7 @@ section {
     border-radius: 50%;
     object-fit: cover;
     font-size: 2rem;
-    background: #30323e;
+    background: #373E47;
   }
 }
 .form {
@@ -193,7 +200,7 @@ section {
     height: 35px;
     padding: 8px 14px;
     font-size: 16px;
-    background: #30323e;
+    background: #373E47;
     color: #fff;
     border: 0;
     border-radius: 0.4rem;
@@ -202,7 +209,7 @@ section {
     padding: 8px 14px;
     resize: none;
     font-size: 16px;
-    background: #30323e;
+    background: #373E47;
     color: #fff;
     border: 0;
     border-radius: 0.3rem;
@@ -210,7 +217,7 @@ section {
 }
 .input-field input:focus,
 .input-field textarea:focus {
-  background: #3a3c49;
+  background: #30373f;
   transition: all ease 0.3s;
 }
 .form-submit {

@@ -1,39 +1,13 @@
 <template>
-  <section>
+  <section id="skills">
     <h2 class="section-title">My Skills</h2>
-    <!-- <div>
-      <div>
-        <ion-icon name="logo-pwa"></ion-icon>
-      </div>
-      <div>
-        <ion-icon name="logo-react"></ion-icon>
-      </div>
-      <div>
-        <ion-icon name="logo-vue"></ion-icon>
-      </div>
-      <div>
-        <ion-icon name="logo-sass"></ion-icon>
-      </div>
-    </div>
 
-    <div>
-      <div>
-        <ion-icon name="logo-nodejs"></ion-icon>
-      </div>
-      <div>
-        <ion-icon name="logo-python"></ion-icon>
-      </div>
+    <div class="cards">
+      <skills-languages-card />
+      <skills-font-end-card />
+      <skills-back-end-card />
     </div>
-
-    <div>
-      <div>
-        <ion-icon name="logo-firebase"></ion-icon>
-      </div>
-      <div>
-        {{ mongoIcon }}
-      </div>
-    </div> -->
-    <div class="skills" id="skills">
+    <!-- <div class="skills" id="skills">
       <div class="skill-card">
         <ion-icon class="card-icon" name="storefront-outline"></ion-icon>
         <h2 class="title yellow">Front end</h2>
@@ -112,70 +86,47 @@
           </ul>
         </div>
       </div>
-    </div>
+    </div> -->
   </section>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import SkillsFontEndCard from './SkillsFontEndCard.vue'
+import SkillsBackEndCard from './SkillsBackEndCard.vue'
+import SkillsLanguagesCard from './SkillsLanguagesCard.vue'
 
 export default defineComponent({
   name: "Skills",
+  components: {
+    SkillsFontEndCard,
+    SkillsBackEndCard,
+    SkillsLanguagesCard
+  }
 });
 </script>
 
 <style lang="scss" scoped>
+#skills {
+  margin-top: 32px;
+}
 .section-title {
   text-align: center;
-  font-size: 2.1rem;
-  margin: 40px 0 15px 0;
+  font-size: 2em;
 }
-.skills {
+.cards {
   display: grid;
+  margin: 16px;
   grid-template-columns: 1fr 1fr 1fr;
-}
-.skill-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 15px 25px;
-  margin: 10px 15px;
-  text-align: center;
-  border: 1px solid #444c56;
-  border-radius: 0.6rem;
-}
-.card-icon {
-  font-size: 2.4rem;
-  margin: 8px 0 18px 0;
-}
-.title.yellow {
-  text-decoration: underline;
-  font-weight: 500;
-}
-ul li a {
-  color: #fff;
-  text-decoration: underline;
-  a:hover {
-    color: #c9d1d9;
+  place-items: start center;
+  justify-content: start;
+  align-items: stretch;
+  gap: 16px;
+  @media screen and (max-width: 1040px) {
+    grid-template-columns: 1fr 1fr;
   }
-}
-
-@media screen and (max-width: 900px) {
-  .skills {
-    grid-template-columns: 1fr 1fr !important;
-  }
-}
-@media screen and (max-width: 630px) {
-  .skills {
-    grid-template-columns: 1fr !important;
-  }
-  .skill-card .short-description {
-    max-width: 60%;
-  }
-}
-@media screen and (max-width: 420px) {
-  .skill-card .short-description {
-    max-width: 95%;
+  @media screen and (max-width: 630px) {
+    grid-template-columns: 1fr;
   }
 }
 </style>
