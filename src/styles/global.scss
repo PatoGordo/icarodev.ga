@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #252a32;
+  color: #cdd9e5;
+}
+
+.osr,
+[osr],
+.only-screen-reader,
+[only-screen-reader],
+.sr-only,
+[sr-only] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.nsr,
+[nsr],
+.not-screen-reader,
+[not-screen-reader],
+.not-sr-only,
+[not-sr-only] {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
