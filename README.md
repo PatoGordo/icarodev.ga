@@ -68,6 +68,8 @@
   </li>
 </ul>
 
+<h3><a href="https://www.figma.com/file/YqWA87290o4KXi9LouFhS0/Icarodev.ga-Design">Figma Design</a></h3>
+
 <h3>Deploy Status</h3>
 
 [![Vercel Status](https://shields.io/github/deployments/patogordo/icarodev.ga/production?label=Vercel%20Deploy&labelColor=3F454B&color=51FF96)](https://icarodev.ga)
