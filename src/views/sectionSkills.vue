@@ -1,6 +1,6 @@
 <template>
-  <section>
-    <h2>Know my skills</h2>
+  <section id="skills">
+    <h2>My Skills</h2>
     <div class="skills-container">
       <div class="skill-container">
         <h3>Programming Languages</h3>

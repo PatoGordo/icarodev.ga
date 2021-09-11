@@ -42,6 +42,15 @@
         <p>I live in Montes Claros, Minas Gerais, Brazil.</p>
       </div>
     </section>
+    <a href="#skills" class="skills-indicator"
+      >Know my Skills
+      <br />
+      <span>
+        <icon icon="akar-icons:chevron-down" />
+        <icon icon="akar-icons:chevron-down" />
+        <icon icon="akar-icons:chevron-down" />
+      </span>
+    </a>
   </header>
 </template>
 
@@ -50,6 +59,32 @@ import { Icon } from "@iconify/vue";
 </script>
 
 <style lang="scss" scoped>
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+.skills-indicator {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 16px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  span {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: bounce 1s infinite;
+  }
+}
 header {
   background: #22272e;
   height: 100vh;
@@ -114,6 +149,9 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    h1 {
+      font-size: 20px;
+    }
     section {
       flex: none;
       justify-content: center !important;
@@ -124,6 +162,15 @@ header {
           height: 200px;
         }
       }
+    }
+  }
+  @media only screen and (max-width: 360px) {
+    p,
+    a {
+      font-size: 12px;
+    }
+    h1 {
+      font-size: 16px !important;
     }
   }
 }

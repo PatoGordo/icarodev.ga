@@ -3,11 +3,29 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 16px;
 }
 
 body {
   background: #252a32;
   color: #cdd9e5;
+}
+
+button,
+a {
+  transition: filter 0.3s;
+  &:hover {
+    filter: brightness(0.8);
+  }
+}
+
+input,
+textarea {
+  transition: filter 0.3s;
+  &:focus {
+    filter: brightness(0.8);
+  }
 }
 
 .osr,
