@@ -109,7 +109,7 @@ async function handleSubmit() {
 
   try {
     const res = await axios.post(
-      "https://my-general-api.vercel.app/contact/set",
+      "https://contact-me-api.vercel.app/contacts/set",
       contact
     );
 
