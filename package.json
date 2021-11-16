@@ -12,7 +12,7 @@
     "**/*": "prettier --write --ignore-unknown"
   },
   "dependencies": {
-    "axios": "^0.22.0",
+    "axios": "^0.24.0",
     "emailjs-com": "^3.0.2",
     "vue": "^3.2.12"
   },
