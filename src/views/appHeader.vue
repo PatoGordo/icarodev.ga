@@ -3,7 +3,7 @@
     <section class="social-container">
       <div class="items">
         <img
-          src="https://media-exp1.licdn.com/dms/image/C4E03AQHo0MZX-J0xEQ/profile-displayphoto-shrink_800_800/0/1631043575252?e=1636588800&v=beta&t=3TcKM5AT5K3D5zYdg3-iRJqDYWSURd30QJzlhhmqkYo"
+          src="https://media-exp1.licdn.com/dms/image/C4E03AQHo0MZX-J0xEQ/profile-displayphoto-shrink_200_200/0/1631043575252?e=1645660800&v=beta&t=W6lv1UNiiwzyvEB3hlEzcb0j1GAmTaI__clpbjAu5CY"
           alt="Icaro Image"
         />
         <div class="links">
