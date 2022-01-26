@@ -33,8 +33,8 @@
         <h1>Hi there! 👋</h1>
         <br />
         <p>
-          My name is Icaro also known as PatoGordo, I’m a 16 years old high
-          schooler.
+          My name is Icaro also known as PatoGordo, I’m a {{ getAge() }} years
+          old high schooler.
         </p>
         <br />
         <p>I’m a Fullstack Web Developer and a beginner Mobile Developer.</p>
@@ -56,6 +56,15 @@
 
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
+
+function getAge() {
+  const birthdate = new Date("2005-03-22");
+  const now = new Date();
+
+  const ageMs = now - birthdate;
+
+  return Math.floor(ageMs / 1000 / 60 / 60 / 24 / 365);
+}
 </script>
 
 <style lang="scss" scoped>
